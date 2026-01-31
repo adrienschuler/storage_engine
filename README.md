@@ -86,10 +86,17 @@ graph TD
 
 ### Installation
 
-To get started, install the required dependencies:
+First, install `uv` if you don't have it yet. Then, create a virtual environment and install the dependencies:
 
 ```bash
-pip install -r requirements.txt
+# Create a virtual environment
+uv venv
+
+# Activate the environment
+source .venv/bin/activate
+
+# Install the project in editable mode with test dependencies
+uv pip install -e ".[dev]"
 ```
 
 ### Basic Usage
